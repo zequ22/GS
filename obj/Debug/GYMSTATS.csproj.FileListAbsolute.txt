@@ -1,0 +1,12 @@
+C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\bin\Debug\GYMSTATS.exe.config
+C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\bin\Debug\GYMSTATS.exe
+C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\bin\Debug\GYMSTATS.pdb
+C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\obj\Debug\GYMSTATS.csproj.AssemblyReference.cache
+C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\obj\Debug\GYMSTATS.csproj.SuggestedBindingRedirects.cache
+C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\obj\Debug\GYMSTATS.Properties.Resources.resources
+C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\obj\Debug\GYMSTATS.csproj.GenerateResource.cache
+C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\obj\Debug\GYMSTATS.csproj.CoreCompileInputs.cache
+C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\obj\Debug\GYMSTATS.exe
+C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\obj\Debug\GYMSTATS.pdb
+C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\obj\Debug\GYMSTATS.Miembros.resources
+C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\obj\Debug\GYMSTATS.Principal.resources
