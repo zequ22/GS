@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnMiembros = new System.Windows.Forms.Button();
+            this.btnProfesores = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMiembros
@@ -41,14 +42,25 @@
             this.btnMiembros.UseVisualStyleBackColor = true;
             this.btnMiembros.Click += new System.EventHandler(this.btnMiembros_Click);
             // 
+            // btnProfesores
+            // 
+            this.btnProfesores.Location = new System.Drawing.Point(12, 41);
+            this.btnProfesores.Name = "btnProfesores";
+            this.btnProfesores.Size = new System.Drawing.Size(75, 23);
+            this.btnProfesores.TabIndex = 1;
+            this.btnProfesores.Text = "Profesores";
+            this.btnProfesores.UseVisualStyleBackColor = true;
+            this.btnProfesores.Click += new System.EventHandler(this.btnProfesores_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(321, 450);
+            this.Controls.Add(this.btnProfesores);
             this.Controls.Add(this.btnMiembros);
             this.Name = "Principal";
-            this.Text = "Form1";
+            this.Text = "GYMSTATS";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
@@ -57,6 +69,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnMiembros;
+        private System.Windows.Forms.Button btnProfesores;
     }
 }
 

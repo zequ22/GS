@@ -30,5 +30,11 @@ namespace GYMSTATS
             Miembros miembrosFormu = new Miembros();
             miembrosFormu.Show();
         }
+
+        private void btnProfesores_Click(object sender, EventArgs e)
+        {
+            Profesores profesoresFormu = new Profesores();
+            profesoresFormu.Show();
+        }
     }
 }
