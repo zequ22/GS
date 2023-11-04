@@ -30,6 +30,8 @@
         {
             this.btnMiembros = new System.Windows.Forms.Button();
             this.btnProfesores = new System.Windows.Forms.Button();
+            this.btnSalones = new System.Windows.Forms.Button();
+            this.btnClases = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMiembros
@@ -52,11 +54,33 @@
             this.btnProfesores.UseVisualStyleBackColor = true;
             this.btnProfesores.Click += new System.EventHandler(this.btnProfesores_Click);
             // 
+            // btnSalones
+            // 
+            this.btnSalones.Location = new System.Drawing.Point(12, 70);
+            this.btnSalones.Name = "btnSalones";
+            this.btnSalones.Size = new System.Drawing.Size(75, 23);
+            this.btnSalones.TabIndex = 2;
+            this.btnSalones.Text = "Salones";
+            this.btnSalones.UseVisualStyleBackColor = true;
+            this.btnSalones.Click += new System.EventHandler(this.btnSalones_Click);
+            // 
+            // btnClases
+            // 
+            this.btnClases.Location = new System.Drawing.Point(12, 99);
+            this.btnClases.Name = "btnClases";
+            this.btnClases.Size = new System.Drawing.Size(75, 23);
+            this.btnClases.TabIndex = 3;
+            this.btnClases.Text = "Clases";
+            this.btnClases.UseVisualStyleBackColor = true;
+            this.btnClases.Click += new System.EventHandler(this.btnClases_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(321, 450);
+            this.Controls.Add(this.btnClases);
+            this.Controls.Add(this.btnSalones);
             this.Controls.Add(this.btnProfesores);
             this.Controls.Add(this.btnMiembros);
             this.Name = "Principal";
@@ -70,6 +94,8 @@
 
         private System.Windows.Forms.Button btnMiembros;
         private System.Windows.Forms.Button btnProfesores;
+        private System.Windows.Forms.Button btnSalones;
+        private System.Windows.Forms.Button btnClases;
     }
 }
 

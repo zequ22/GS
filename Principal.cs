@@ -36,5 +36,17 @@ namespace GYMSTATS
             Profesores profesoresFormu = new Profesores();
             profesoresFormu.Show();
         }
+
+        private void btnSalones_Click(object sender, EventArgs e)
+        {
+            Salones salonesFormu = new Salones();
+            salonesFormu.Show();
+        }
+
+        private void btnClases_Click(object sender, EventArgs e)
+        {
+            Clases clasesFormu = new Clases();
+            clasesFormu.Show();
+        }
     }
 }

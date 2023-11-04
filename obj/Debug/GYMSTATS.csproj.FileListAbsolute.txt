@@ -10,3 +10,4 @@ C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\obj\Debug\GYMSTATS.exe
 C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\obj\Debug\GYMSTATS.pdb
 C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\obj\Debug\GYMSTATS.Miembros.resources
 C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\obj\Debug\GYMSTATS.Principal.resources
+C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\obj\Debug\GYMSTATS.Profesores.resources
