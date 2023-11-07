@@ -21,7 +21,42 @@ namespace GYMSTATS
         private void Clases_Load(object sender, EventArgs e)
         {
             dgvClases.DataSource = llenar_grid();
+
+            cbProfesor.DataSource = llenar_profes();
+            cbProfesor.DisplayMember = "nombre_prof";
+            cbProfesor.ValueMember = "cod_prof";
+
+            cbSalon.DataSource = llenar_salones();
+            cbSalon.DisplayMember = "cod_salon";
+            cbSalon.ValueMember = "cod_salon";
         }
+
+        public DataTable llenar_salones()
+        {
+            Conexion.Conectar();
+            DataTable dt3 = new DataTable();
+            string consulta = "SELECT * FROM Salones";
+            SqlCommand cmd = new SqlCommand(consulta, Conexion.Conectar());
+
+            SqlDataAdapter da3 = new SqlDataAdapter(cmd);
+
+            da3.Fill(dt3);
+            return dt3;
+        }
+
+        public DataTable llenar_profes()
+        {
+            Conexion.Conectar();
+            DataTable dt2 = new DataTable();
+            string consulta = "SELECT * FROM Profesores";
+            SqlCommand cmd = new SqlCommand(consulta, Conexion.Conectar());
+
+            SqlDataAdapter da2 = new SqlDataAdapter(cmd);
+
+            da2.Fill(dt2);
+            return dt2;
+        }
+
         public DataTable llenar_grid()
         {
             Conexion.Conectar();
@@ -38,13 +73,14 @@ namespace GYMSTATS
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             Conexion.Conectar();
-            string insertar = "INSERT INTO Clases (cod_clase,nombre,descripcion,hora,cod_profe)VALUES(@cod_clase,@nombre,@descripcion,@hora,@cod_profe)";
+            string insertar = "INSERT INTO Clases (cod_clase,nombre,descripcion,hora,cod_prof,cod_salon)VALUES(@cod_clase,@nombre,@descripcion,@hora,@cod_prof,@cod_salon)";
             SqlCommand cmd1 = new SqlCommand(insertar, Conexion.Conectar());
             cmd1.Parameters.AddWithValue("@cod_clase", txtCod.Text);
             cmd1.Parameters.AddWithValue("@nombre", txtNombre.Text);
             cmd1.Parameters.AddWithValue("@descripcion", txtDesc.Text);
             cmd1.Parameters.AddWithValue("@hora", txtHora.Text);
-            cmd1.Parameters.AddWithValue("@cod_profe", txtCodprofe.Text);
+            cmd1.Parameters.AddWithValue("@cod_prof", cbProfesor.SelectedValue.ToString());
+            cmd1.Parameters.AddWithValue("@cod_salon", cbSalon.SelectedValue.ToString());
 
             cmd1.ExecuteNonQuery();
 
@@ -61,7 +97,8 @@ namespace GYMSTATS
                 txtNombre.Text = dgvClases.CurrentRow.Cells[1].Value.ToString();
                 txtDesc.Text = dgvClases.CurrentRow.Cells[2].Value.ToString();
                 txtHora.Text = dgvClases.CurrentRow.Cells[3].Value.ToString();
-                txtCodprofe.Text = dgvClases.CurrentRow.Cells[4].Value.ToString();
+                cbProfesor.Text = dgvClases.CurrentRow.Cells[4].Value.ToString();
+                cbSalon.Text = dgvClases.CurrentRow.Cells[4].Value.ToString();
             }
             catch { }
         }
@@ -69,13 +106,14 @@ namespace GYMSTATS
         private void btnModificar_Click(object sender, EventArgs e)
         {
             Conexion.Conectar();
-            string actualizar = "UPDATE Salones SET nombre=@nombre, descripcion=@descripcion, hora=@hora, cod_profe=@cod_profe WHERE cod_clase=@cod_clase";
+            string actualizar = "UPDATE Salones SET nombre=@nombre, descripcion=@descripcion, hora=@hora, cod_prof=@cod_prof WHERE cod_clase=@cod_clase";
             SqlCommand cmd2 = new SqlCommand(actualizar, Conexion.Conectar());
             cmd2.Parameters.AddWithValue("@cod_clase", txtCod.Text);
             cmd2.Parameters.AddWithValue("@nombre", txtNombre.Text);
             cmd2.Parameters.AddWithValue("@descripcion", txtDesc.Text);
             cmd2.Parameters.AddWithValue("@hora", txtHora.Text);
-            cmd2.Parameters.AddWithValue("@cod_profe", txtCodprofe.Text);
+            cmd2.Parameters.AddWithValue("@cod_prof", cbProfesor.SelectedValue.ToString());
+            cmd2.Parameters.AddWithValue("@cod_salon", cbSalon.SelectedValue.ToString());
 
             cmd2.ExecuteNonQuery();
 
@@ -102,7 +140,6 @@ namespace GYMSTATS
             txtNombre.Clear();
             txtDesc.Clear();
             txtHora.Clear();
-            txtCodprofe.Clear();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -114,6 +151,12 @@ namespace GYMSTATS
         {
             Profesores profesoresFormu = new Profesores();
             profesoresFormu.Show();
+        }
+
+        private void btnAS_Click(object sender, EventArgs e)
+        {
+            Salones salonesFormu = new Salones();
+            salonesFormu.Show();
         }
     }
 }

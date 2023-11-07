@@ -58,6 +58,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GYMSTATSDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="GYMSTATSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GYMSTATSDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Miembros.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +123,17 @@
     </None>
     <None Include="GYMSTATSDataSet.xss">
       <DependentUpon>GYMSTATSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GYMSTATSDataSet1.xsc">
+      <DependentUpon>GYMSTATSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GYMSTATSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GYMSTATSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GYMSTATSDataSet1.xss">
+      <DependentUpon>GYMSTATSDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

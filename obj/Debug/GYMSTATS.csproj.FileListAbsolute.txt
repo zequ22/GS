@@ -11,3 +11,5 @@ C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\obj\Debug\GYMSTATS.pdb
 C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\obj\Debug\GYMSTATS.Miembros.resources
 C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\obj\Debug\GYMSTATS.Principal.resources
 C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\obj\Debug\GYMSTATS.Profesores.resources
+C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\obj\Debug\GYMSTATS.Clases.resources
+C:\Users\alder\Escritorio\GYMSTATS\GYMSTATS\obj\Debug\GYMSTATS.Salones.resources

@@ -32,6 +32,7 @@
             this.btnProfesores = new System.Windows.Forms.Button();
             this.btnSalones = new System.Windows.Forms.Button();
             this.btnClases = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMiembros
@@ -74,11 +75,22 @@
             this.btnClases.UseVisualStyleBackColor = true;
             this.btnClases.Click += new System.EventHandler(this.btnClases_Click);
             // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(12, 415);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 4;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(321, 450);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnClases);
             this.Controls.Add(this.btnSalones);
             this.Controls.Add(this.btnProfesores);
@@ -96,6 +108,7 @@
         private System.Windows.Forms.Button btnProfesores;
         private System.Windows.Forms.Button btnSalones;
         private System.Windows.Forms.Button btnClases;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
 

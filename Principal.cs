@@ -48,5 +48,10 @@ namespace GYMSTATS
             Clases clasesFormu = new Clases();
             clasesFormu.Show();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
