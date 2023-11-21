@@ -63,6 +63,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GYMSTATSDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Inscripciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inscripciones.Designer.cs">
+      <DependentUpon>Inscripciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Miembros.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     </Compile>
     <EmbeddedResource Include="Clases.resx">
       <DependentUpon>Clases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inscripciones.resx">
+      <DependentUpon>Inscripciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Miembros.resx">
       <DependentUpon>Miembros.cs</DependentUpon>

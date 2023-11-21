@@ -53,5 +53,11 @@ namespace GYMSTATS
         {
             Application.Exit();
         }
+
+        private void btnInscripciones_Click(object sender, EventArgs e)
+        {
+            Inscripciones inscripcionesFormu = new Inscripciones();
+            inscripcionesFormu.Show();
+        }
     }
 }

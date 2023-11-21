@@ -98,7 +98,7 @@ namespace GYMSTATS
                 txtDesc.Text = dgvClases.CurrentRow.Cells[2].Value.ToString();
                 txtHora.Text = dgvClases.CurrentRow.Cells[3].Value.ToString();
                 cbProfesor.Text = dgvClases.CurrentRow.Cells[4].Value.ToString();
-                cbSalon.Text = dgvClases.CurrentRow.Cells[4].Value.ToString();
+                cbSalon.Text = dgvClases.CurrentRow.Cells[5].Value.ToString();
             }
             catch { }
         }
